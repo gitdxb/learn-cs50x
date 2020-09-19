@@ -7,7 +7,7 @@
 ## Week 0: 18/09/2020
 - Input => Algorithm => Output
 - Functions, Loop, Conditions, Boolean expressions, Variables, Threads, Events...
-- Algorithm efficienty: n, n/2, log(n)
+- Algorithm efficiency: n, n/2, log(n)
 - Numbers, Characters, Images, Video, Sound can be representd in binary
 - ASCII, Unicode
 - Decimal, Binary: base 10 and base 2
@@ -18,3 +18,13 @@
 - PSET link: https://scratch.mit.edu/projects/427216291
 
 ## Week 1 - C: 19/09/2020
+- Using of CS50 IDE, Sandbox
+- stdio.h, cs50.h
+- Data types: char, int, float, long, bool,...-
+- Placeholders: %i, %s, %f, %c, %li
+- Basic navigation using command lines: cd, ls, mkdir, rm, rmdir
+- C code need to use compiler to translate code to machine code (aka binary)
+- "clang <file>"
+- "clang -o <name> <file-name>" so that I can run the code with easy name
+- cs50.h library: get_char, get_double, get_float, get_int, get_long, get_long_long, get_string
+- When writing a function, pay attention to semicolon, indentation
