@@ -40,4 +40,10 @@
 - Pay attention to code design or style
 - Abstraction is simplication of a complicated problem (function)
 - Put custom function at the end in the code (details of function, explain what it does), put THE NAME OF that function at the top aka prototype (to let the machine now a function is define), and what a function do in between them. The code wouldn't run if they have different order.
-- 
+- Int take up 4 bytes (32 bit), char - 1 byte (8bits), float - 4 bytes, double (float x2) - 8 bytes (64bits of data)
+- If I want to use boolean data type, I need to do #include <cs50.h> as heading
+- int x = (bool_ex) ? 5 : 6; ==> Quick conditional expression. Only use for quick decision. if bool_ex is true, go to either 5 or 6. First position true, second is false
+- "switch" statement for discrete cases (many cases??) to make decision, use with "break" and "default" (check switch_cond.c in this repo)
+- Command line: To copy entire directory and files: cp -r old_dir new_dir/ -r for recursive
+- rm -f file: delete file without asking question
+- rm -r folder or rm -rf folder (without asking question)
