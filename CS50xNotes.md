@@ -5,6 +5,27 @@
 * Professors: David J Malan, Brian Yu, Doug Lloyd
 
 ## Timeline summary
+
+| WEEK 0              | 18/09/2020 |
+|---------------------|------------|
+| PSET 0              | 19/09/2020 |
+| WEEK 1              | 19/09/2020 |
+| PSET 1              | 26/09/2020 |
+| WEEK 2              | 26/09/2090 |
+| PSET 2              |            |
+| WEEK 3              |            |
+| PSET 3              |            |
+| WEEK 4              |            |
+| PSET 4              |            |
+| WEEK 5              |            |
+| PSET 5              |            |
+| WEEK 6              |            |
+| PSET 6              |            |
+| WEEK 7              |            |
+| PSET 7              |            |
+| FINAL PROJECT START |            |
+| FINAL PROJECT END   |            |
+| EXIT                |            |
 **WEEK0**: 18/09/2020
 PSET0: 19/09/2020
 
