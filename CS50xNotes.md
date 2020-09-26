@@ -47,4 +47,6 @@
 - Command line: To copy entire directory and files: cp -r old_dir new_dir/ -r for recursive
 - rm -f file: delete file without asking question
 - rm -r folder or rm -rf folder (without asking question)
-- PSET1 submission date: hello - 22/9, mario (less/more) - 23/9, cash - 24/9
+- PSET1 submission date: hello - 22/9, mario (less/more) - 23/9, cash - 24/9, credit - 26/9
+
+## Week 2 - Array: 26/09/2020
