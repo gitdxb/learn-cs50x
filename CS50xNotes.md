@@ -49,4 +49,12 @@
 - rm -r folder or rm -rf folder (without asking question)
 - PSET1 submission date: hello - 22/9, mario (less/more) - 23/9, cash - 24/9, credit - 26/9
 
-## Week 2 - Array: 26/09/2020
+## Week 2 - Arrays: 26/09/2020
+- "clang" is the compiler, "make" does all the clang's dirty works for us
+- Compiling source code into machine code include 4 steps: preprocessing, compiling, assembling, linking
+- Preprocessing: the 1st process that read all the headings, start with #: stdio.h, cs50.h...
+- Compiling: souce code in C ==> Assembly code 
+- Assembling: assemble Assembly codes into binary instruction so CPU can understand
+- Linking: combining library (headings) with our source code to make 1 file that can run (ie: a.out , ./hello,...)
+- Data types: bool - 1 byte, char - 1 byte,...
+- 
