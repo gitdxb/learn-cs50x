@@ -4,6 +4,44 @@
 * Course link: https://www.edx.org/course/cs50s-introduction-to-computer-science
 * Professors: David J Malan, Brian Yu, Doug Lloyd
 
+## Timeline summary
+**WEEK0**: 18/09/2020
+PSET0: 19/09/2020
+||
+||
+**WEEK1**: 19/09/2020
+PSET1: 26/09/2020
+||
+||
+**WEEK2**: 26/09/2020
+PSET2: 
+||
+||
+**WEEK3**: 
+PSET1: 
+||
+||
+**WEEK4**: 
+PSET1: 
+||
+||
+**WEEK5**: 
+PSET1: 
+||
+||
+**WEEK6**: 
+PSET1: 
+||
+||
+**WEEK7**: 
+PSET1: 
+||
+||
+**FINAL PROJECT START**:
+**FINAL PROJECT END**:
+||
+*EXIT*
+
 ## Week 0: 18/09/2020
 - Input => Algorithm => Output
 - Functions, Loop, Conditions, Boolean expressions, Variables, Threads, Events...
