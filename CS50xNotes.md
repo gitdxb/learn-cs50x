@@ -5,65 +5,18 @@
 * Professors: David J Malan, Brian Yu, Doug Lloyd
 
 ## Timeline summary
-
-| WEEK 0              | 18/09/2020 |
-|---------------------|------------|
-| PSET 0              | 19/09/2020 |
-| WEEK 1              | 19/09/2020 |
-| PSET 1              | 26/09/2020 |
-| WEEK 2              | 26/09/2090 |
-| PSET 2              |            |
-| WEEK 3              |            |
-| PSET 3              |            |
-| WEEK 4              |            |
-| PSET 4              |            |
-| WEEK 5              |            |
-| PSET 5              |            |
-| WEEK 6              |            |
-| PSET 6              |            |
-| WEEK 7              |            |
-| PSET 7              |            |
-| FINAL PROJECT START |            |
-| FINAL PROJECT END   |            |
-| EXIT                |            |
-**WEEK0**: 18/09/2020
-PSET0: 19/09/2020
-
-||
-||
-
-**WEEK1**: 19/09/2020
-PSET1: 26/09/2020
-||
-||
-**WEEK2**: 26/09/2020
-PSET2: 
-||
-||
-**WEEK3**: 
-PSET1: 
-||
-||
-**WEEK4**: 
-PSET1: 
-||
-||
-**WEEK5**: 
-PSET1: 
-||
-||
-**WEEK6**: 
-PSET1: 
-||
-||
-**WEEK7**: 
-PSET1: 
-||
-||
-**FINAL PROJECT START**:
-**FINAL PROJECT END**:
-||
-*EXIT*
+|      WEEK     | DATE STARTED | DATE COMPLETED (PSET) |
+|:-------------:|:------------:|:---------------------:|
+|       0       |  18/09/2020  |       19/09/2020      |
+|       1       |  19/09/2020  |       26/09/2020      |
+|       2       |  26/09/2020  |                       |
+|       3       |              |                       |
+|       4       |              |                       |
+|       5       |              |                       |
+|       6       |              |                       |
+|       7       |              |                       |
+| FINAL PROJECT |              |                       |
+|      EXIT     |              |                       |
 
 ## Week 0: 18/09/2020
 - Input => Algorithm => Output
