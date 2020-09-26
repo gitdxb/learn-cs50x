@@ -73,6 +73,4 @@
 - Linking: combining library (headings) with our source code to make 1 file that can run (ie: a.out , ./hello,...)
 - Data types: bool - 1 byte, char - 1 byte,...
 - 
-=======
-## Week 2 - Array: 26/09/2020
->>>>>>> ee0986b4a9d897f7e0d1c1f0df84415f6dd4c971
+
