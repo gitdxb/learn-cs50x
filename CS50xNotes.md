@@ -2,7 +2,7 @@
 
 * Syllabus: https://cs50.harvard.edu/x/2020/syllabus/
 * Course link: https://www.edx.org/course/cs50s-introduction-to-computer-science
-* Professor: David J Malan, Brian Yu, Doug Lloyd
+* Professors: David J Malan, Brian Yu, Doug Lloyd
 
 ## Week 0: 18/09/2020
 - Input => Algorithm => Output
@@ -14,7 +14,7 @@
 - 8 bit can represent 256 character maxium. Max value = 255
 - Color in RGB: 0 --> 255
 - Coding with Scratch: a graphical programming language: https://scratch.mit.edu
-- PSET0 submission date: 19/09/2020
+- **PSET0 submission date:** 19/09/2020
 - PSET link: https://scratch.mit.edu/projects/427216291
 
 ## Week 1 - C: 19/09/2020
@@ -47,6 +47,6 @@
 - Command line: To copy entire directory and files: cp -r old_dir new_dir/ -r for recursive
 - rm -f file: delete file without asking question
 - rm -r folder or rm -rf folder (without asking question)
-- PSET1 submission date: hello - 22/9, mario (less/more) - 23/9, cash - 24/9, credit - 26/9
+- **PSET1 submission date**: hello - 22/9, mario (less/more) - 23/9, cash - 24/9, credit - 26/9
 
 ## Week 2 - Array: 26/09/2020
