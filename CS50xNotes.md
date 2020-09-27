@@ -2,6 +2,8 @@
 
 * Syllabus: https://cs50.harvard.edu/x/2020/syllabus/
 * Course link: https://www.edx.org/course/cs50s-introduction-to-computer-science
+* Manual pages: https://manual.cs50.io/
+* CS50 IDE: https://ide.cs50.io/
 * Professors: David J Malan, Brian Yu, Doug Lloyd
 
 ## Timeline summary
@@ -15,8 +17,8 @@
 |       5       |              |                       |
 |       6       |              |                       |
 |       7       |              |                       |
+| 	8       |              |                       |
 | FINAL PROJECT |              |                       |
-|      EXIT     |              |                       |
 
 ## Week 0: 18/09/2020
 - Input => Algorithm => Output
@@ -63,7 +65,6 @@
 - rm -r folder or rm -rf folder (without asking question)
 - **PSET1 submission date**: hello - 22/9, mario (less/more) - 23/9, cash - 24/9, credit - 26/9
 
-<<<<<<< HEAD
 ## Week 2 - Arrays: 26/09/2020
 - "clang" is the compiler, "make" does all the clang's dirty works for us
 - Compiling source code into machine code include 4 steps: preprocessing, compiling, assembling, linking
@@ -79,5 +80,7 @@
 - To convert a char to lower or upper case, loop through each char and +32 or -32.
 - <ctype.h> is a libraby do that dirty job, simply use tolower() or toupper() to convert
 - See more: https://manual.cs50.io/
--  Google more about Command Line argument
+- Google more about Command Line argument
+- To see ASCII code associated with character, when printf put placeholder %i instead of %c, each character need to be printed individualy
+- 
 
