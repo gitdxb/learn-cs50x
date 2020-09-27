@@ -72,5 +72,12 @@
 - Assembling: assemble Assembly codes into binary instruction so CPU can understand
 - Linking: combining library (headings) with our source code to make 1 file that can run (ie: a.out , ./hello,...)
 - Data types: bool - 1 byte, char - 1 byte,...
-- 
+- We use "const", to tell compiler that value of N (length of array) should never be changed. 
+- String is array of characters, usually end with "\0" after every string, it costs 1 byte, where all 8 bits set to zero. It's called null character
+- String initiated with "string ...", i.e: "string names[4]"
+- <string.h> is the library for string, strlen() is method to cal the length of string, %lu is its placeholder
+- To convert a char to lower or upper case, loop through each char and +32 or -32.
+- <ctype.h> is a libraby do that dirty job, simply use tolower() or toupper() to convert
+- See more: https://manual.cs50.io/
+-  Google more about Command Line argument
 
