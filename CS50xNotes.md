@@ -11,7 +11,7 @@
 |:-------------:|:------------:|:---------------------:|
 |       0       |  18/09/2020  |       19/09/2020      |
 |       1       |  19/09/2020  |       26/09/2020      |
-|       2       |  26/09/2020  |                       |
+|       2       |  26/09/2020  |       29/09/2020      |
 |       3       |              |                       |
 |       4       |              |                       |
 |       5       |              |                       |
@@ -82,5 +82,8 @@
 - See more: https://manual.cs50.io/
 - Google more about Command Line argument
 - To see ASCII code associated with character, when printf put placeholder %i instead of %c, each character need to be printed individualy
-- 
+- int array[] = {1,2,3...}; to simplify an array, odmit the array length
+- To copy array items to another list, loop through each item and assign them to a new array
+- PSET2 submission date: readability - 28/9, ceasar - 29/09
 
+## Week 3 - Algorithms: 29/09/2020
