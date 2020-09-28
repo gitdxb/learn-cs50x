@@ -16,19 +16,21 @@ int main(int argc, string argv[])
     }
     else if (argc == 2)
     {
-        char *p;
-        int k = (int)strtol(argv[1], &p, 10);
-        if (*p != '\0')
+        for (int j = 0, n = argc; j < n; j++) // break if input mix int and char
         {
-            printf("Usage: ./caesar key\n");
-            return 1;
+            if (isalpha(argv[1][j]))
+            {
+                printf("Usage: ./caesar key\n");
+                return 1;
+                break;
+            }
         }
         if (!isdigit(*argv[1]))
         {
             printf("Usage: ./caesar key\n");
             return 1;
         }
-        else  // When arg is valid
+        else
         {
             key = atoi(argv[1]);
             string s = get_string("plaintext: ");
