@@ -111,3 +111,14 @@
 3. Ω(n): bubble sort
 4. Ω(log n): nothing
 5. Ω(1): linear search, binary search
+- O(n) and O(n^2) is almost the same in effiency, so it's all O(n)
+- O(log2n) can be the same as, and called O(log n)
+- The worst case = maximum steps, the best case = the minimum steps to solve the problem
+- Computer "return 0" if it execute correctly, " return 1 or any number" if it doesn't
+- If an array is declared, the compiler need to know the length and data type
+- Creating custom data type is encapsulation feature of C, put all related info in 1 place (good design), and thing like array when we make a few different arrays with too many items, at some scale it become bad design. 
+- Lots of company store lot of accounts, passwords, history...many pieces of data associated with me will be better design with custom data type. ie: people[].names, people[].number...
+- If you wanna get custom array with custom length by asking input from user, you should try to use constant, i.e: const int NUMBER = 10; so we have the length to loop through it, this const stay outside main()
+- Recursion is a concept that you can do things again and again without using a loop
+- Merge sort: Base case: if only one number - quit, recursive case (func call itself): SORT left, SORT right...merge sorted
+- 
