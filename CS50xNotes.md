@@ -12,7 +12,7 @@
 |       0       |  18/09/2020  |       19/09/2020      |
 |       1       |  19/09/2020  |       26/09/2020      |
 |       2       |  26/09/2020  |       29/09/2020      |
-|       3       |              |                       |
+|       3       |  29/09/2020  |                       |
 |       4       |              |                       |
 |       5       |              |                       |
 |       6       |              |                       |
@@ -87,3 +87,27 @@
 - PSET2 submission date: readability - 28/9, ceasar - 29/09
 
 ## Week 3 - Algorithms: 29/09/2020
+- Tough week! Let's go!
+- Big O notation: "on the order of...", upper bound of number of steps, or the worst case, and typically what we care about more
+- Common running times: O(n^2), O(n log n), O(n) - linear search, O(log n) - binary search, O(1)
+- Big Ω, big Omega notation, lower bound of number of steps for our algorithm
+- For big O, linear search: worst case is n, best case is 1 (bcz it might take only 1 step to find the number)
+- "strcmp" in <string.h> compare 2 strings, bcz in C you can't do it easily: strcmp(str1, st2) == 0, if you want to search if there is the same string exists
+- You can make custome data type, i.e: person. typedef struct {...}
+- Bubble sort - O(n^2): compare adjacent pair in a list, n - 1 times, n - 2 pairs. Biggest number get sorted and stay in the most right position
+- Selection sort - O(n^2): Find the smallest number put in the most left, find the next smallest put second left, so on and so forth, this sort still look for each element in the list to find the smallest
+- Recursion: use its own method to solve its problem
+- Merge sort: the best and the worst case take the same number of step, therefore: it has Θ(n log n), aka Theta Notation
+- Worst case list:
+1. O(n2): bubble sort, selection sort
+2. O(n log n): merge sort
+3. O(n): linear search
+4. O(log n): binary search
+5. O(1): nothing
+
+- Best case runtime algorithm:
+1. Ω(n2): selection sort
+2. Ω(n log n): merge sort
+3. Ω(n): bubble sort
+4. Ω(log n): nothing
+5. Ω(1): linear search, binary search
