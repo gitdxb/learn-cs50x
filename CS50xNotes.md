@@ -99,7 +99,7 @@
 - Recursion: use its own method to solve its problem
 - Merge sort: the best and the worst case take the same number of step, therefore: it has Θ(n log n), aka Theta Notation
 - Worst case list:
-1. O(n2): bubble sort, selection sort
+1. O(n2): bubble sort, selection sort, insertion sort
 2. O(n log n): merge sort
 3. O(n): linear search
 4. O(log n): binary search
@@ -108,7 +108,7 @@
 - Best case runtime algorithm:
 1. Ω(n2): selection sort
 2. Ω(n log n): merge sort
-3. Ω(n): bubble sort
+3. Ω(n): bubble sort, insertion sort
 4. Ω(log n): nothing
 5. Ω(1): linear search, binary search
 - O(n) and O(n^2) is almost the same in effiency, so it's all O(n)
@@ -119,6 +119,10 @@
 - Creating custom data type is encapsulation feature of C, put all related info in 1 place (good design), and thing like array when we make a few different arrays with too many items, at some scale it become bad design. 
 - Lots of company store lot of accounts, passwords, history...many pieces of data associated with me will be better design with custom data type. ie: people[].names, people[].number...
 - If you wanna get custom array with custom length by asking input from user, you should try to use constant, i.e: const int NUMBER = 10; so we have the length to loop through it, this const stay outside main()
-- Recursion is a concept that you can do things again and again without using a loop
+- Recursion is a concept that you can do things again and again without using a loop, an elegant solution
 - Merge sort: Base case: if only one number - quit, recursive case (func call itself): SORT left, SORT right...merge sorted
-- 
+- Bubble sort: the concept is to move the biggest number to the right, sort from right to left, the worst case scenario is when it's in reversed order, biggest on the left and so on,best case is when everything is sorted
+- Selection sort: building sorted array from left to right, smallest items to the left
+- For binary search, items need to be SORTED (!important) before the search
+- Bubble sort: set counter to non-zero value, loop through each item until counter = 0, otherwise add 1 to each swap.
+- Insertion sort: very fast, start with first element become a sorted portion, for the next unsorted elements, the next each item insert into sorted portion with sorted position, no need to go back and forth for each time sorting, each element get scanned once and get sorted immediately. Worst case is when all element sorted in reversed order, best case is when everything is sorted by luck
