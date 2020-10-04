@@ -12,7 +12,7 @@
 |       0       |  18/09/2020  |       19/09/2020      |
 |       1       |  19/09/2020  |       26/09/2020      |
 |       2       |  26/09/2020  |       29/09/2020      |
-|       3       |  29/09/2020  |                       |
+|       3       |  29/09/2020  |       04/10/2020      |
 |       4       |              |                       |
 |       5       |              |                       |
 |       6       |              |                       |
@@ -126,3 +126,6 @@
 - For binary search, items need to be SORTED (!important) before the search
 - Bubble sort: set counter to non-zero value, loop through each item until counter = 0, otherwise add 1 to each swap.
 - Insertion sort: very fast, start with first element become a sorted portion, for the next unsorted elements, the next each item insert into sorted portion with sorted position, no need to go back and forth for each time sorting, each element get scanned once and get sorted immediately. Worst case is when all element sorted in reversed order, best case is when everything is sorted by luck
+- PSET submission date: Plurality - 2/10, Runoff - 4/10
+
+## Week 4 - Memory: 05/10/2020
