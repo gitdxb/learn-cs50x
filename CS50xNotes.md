@@ -13,7 +13,7 @@
 |       1       |  19/09/2020  |       26/09/2020      |
 |       2       |  26/09/2020  |       29/09/2020      |
 |       3       |  29/09/2020  |       04/10/2020      |
-|       4       |              |                       |
+|       4       |  05/10/2020  |                       |
 |       5       |              |                       |
 |       6       |              |                       |
 |       7       |              |                       |
@@ -129,3 +129,11 @@
 - PSET submission date: Plurality - 2/10, Runoff - 4/10
 
 ## Week 4 - Memory: 05/10/2020
+- The addresses for memory use the counting system: hexadecimal (16 digits, 0-9, A-F)
+- Recall 8 bits can count up to 255
+- Hexadecimal can represent 255 in only 2 digits
+- The max value: 255, can be represented in FF ( F - 16^0. F - 16^1)
+- F is value of 15 in decimal, so 16^1 * 15 = 240, 16^0 * 15 = 15. Total of 255
+|  0  |  1  |  2  | 3 | 4 | 5 | 6 | 7 | 8 | 9 | A | B | C | D | E | F | 10 | 11 |
+|:--:|:--:|:--:| :--: |  :--:| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |  :--:| :--: |:--:  | :--: | :--: |:--:|
+|  0  |  1  |  2  | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 |
