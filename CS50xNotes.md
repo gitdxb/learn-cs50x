@@ -152,6 +152,7 @@
 - <string.h>: copy string with "strcpy(str2, str1), without using a loop 
 - malloc() in <stdlib.h> to allocate new memory when you try to copy a string (with loop)
 - When copy a string to a new string, you need <string.h> to use strlen() and + 1 to it for the loop, to add null aka "\0" character, otherwise the memory will be run out of memory because it doesnt know where to stop. therefore computer crashes, program go to unknown area of memory
+- Sometimes, the computer or mobile get slow, lagging because we open so many programs, apps, softwares, web browser tabs... it cause memory leak, or those things keep asking for new memory to run, it exhaustes the computer...
 - When using malloc(), need to free memory after use, otherwise there is memory leak: bad! use free(str2), check leak by: help50 valgrind ./cp_str1
 - The CS50 Library has been freeing memory it’s allocated in get_string, when our program finishes!
 - Swapping 2 integer is like swapping 2 cups of water, you need 1 more empty cup to temporarily keep water, likewise integer, you will need a temp variable
