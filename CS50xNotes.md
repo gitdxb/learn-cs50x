@@ -134,8 +134,36 @@
 - Hexadecimal can represent 255 in only 2 digits
 - The max value: 255, can be represented in FF ( F - 16^0. F - 16^1)
 - F is value of 15 in decimal, so 16^1 * 15 = 240, 16^0 * 15 = 15. Total of 255
+- 0A is the same as 10, 0f = 16,...there is no case sensitivity
+- RGB color system also use hex, i.e 000000 means black
+- 0x10 , the 0x is prefix, 0x10 = 16
+- So Hex can be used to access any data type in the memory, the address will start with something look like this: 0x12345678, the address is called pointer
+- In C, to locate that address, we use & operator, %p is the placeholder. ie: printf("%p\n", &n); to access var n in the memory
+- "&" means: " Get the address of this value", "&n" - the address of n
+- Pointer: start with * operator, meaning go to the location that a pointer is pointing to
+- A pointer will be 8 bytes, double an integer
+- "*&n": go the the address of n, print out the value
 
+1. printf("%p\n", &n) - print address where n is stored
+2. printf("%i or %c\n", *&n) - print the value of that address
+3. int *p = &n - assign the value in that address to a new variable, then printf("%p\n", p) - output the address (same with n), or printf("%i\n", *p) - output value of address
 
-|  0  |  1  |  2  | 3 | 4 | 5 | 6 | 7 | 8 | 9 | A | B | C | D | E | F | 10 | 11 |
-|:--:|:--:|:--:| :--: |  :--:| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |  :--:| :--: |:--:  | :--: | :--: |:--:|
-|  0  |  1  |  2  | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 |
+- "char *" is alias of "string" in cs50 library (training wheel lib), but more user-friendly, when "char *s = get_string("...") - it will get char by char
+- <string.h>: copy string with "strcpy(str2, str1), without using a loop 
+- malloc() in <stdlib.h> to allocate new memory when you try to copy a string (with loop)
+- When copy a string to a new string, you need <string.h> to use strlen() and + 1 to it for the loop, to add null aka "\0" character, otherwise the memory will be run out of memory because it doesnt know where to stop. therefore computer crashes, program go to unknown area of memory
+- When using malloc(), need to free memory after use, otherwise there is memory leak: bad! use free(str2), check leak by: help50 valgrind ./cp_str1
+- The CS50 Library has been freeing memory it’s allocated in get_string, when our program finishes!
+- Swapping 2 integer is like swapping 2 cups of water, you need 1 more empty cup to temporarily keep water, likewise integer, you will need a temp variable
+- Memory Layout: From top to bottom: Machine code => Globals (global vars) => Heap (empty area, malloc() can get access to) => Stack (Where our func runs)
+- If we call malloc() too many times, it goes past the heap and make heap overflow (aka: buffer overflow)
+- If too many funcs called, we will have stack overflow, because stack has too many frams of memory allocated as well (aka: buffer overflow, too, entire computer might crash)
+- scanf(): takes a format, %i, so the input is “scanned” for that format, and the address in memory where we want that input to go.
+- ie: scanf("%d", &n) - go th address of n, assign format %d to n
+- Declare a pointer: <data type> *<pointer name>
+- Initialize pointer: <pointer name> = <address start with & operator>
+- https://nguyenvanhieu.vn/ngan-xep-stack/
+- https://nguyenvanhieu.vn/khoa-hoc-lap-trinh-c/
+- http://diendan.congdongcviet.com/threads/t42977::tim-hieu-ban-chat-cua-con-tro-tu-co-ban-den-nang-cao.cpp
+- Pointers (pointer variables) are special variables that are used to store addresses rather than values. (programiz.com/c-programming/c-pointers)
+- 
