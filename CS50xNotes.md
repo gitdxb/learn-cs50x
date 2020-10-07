@@ -166,9 +166,9 @@
 - ie: scanf("%d", &n) - go th address of n, assign format %d to n
 - Declare a pointer: <data type> *<pointer name>
 - Initialize pointer: <pointer name> = <address start with & operator>
-- https://nguyenvanhieu.vn/ngan-xep-stack/
-- https://nguyenvanhieu.vn/khoa-hoc-lap-trinh-c/
-- http://diendan.congdongcviet.com/threads/t42977::tim-hieu-ban-chat-cua-con-tro-tu-co-ban-den-nang-cao.cpp
+- `https://nguyenvanhieu.vn/ngan-xep-stack/`
+- `https://nguyenvanhieu.vn/khoa-hoc-lap-trinh-c/`
+- `http://diendan.congdongcviet.com/threads/t42977::tim-hieu-ban-chat-cua-con-tro-tu-co-ban-den-nang-cao.cpp`
 - Pointers (pointer variables) are special variables that are used to store addresses rather than values. (programiz.com/c-programming/c-pointers)
 - Before, without the pointers, functions get passed in value, which is a copy of variable. But with pointers, we pass actual vars, that might change the whole original func, recall the toupper() when copy 2 strings
 - When we work with data in hard disk, the data can't be manipulated directly there, need to pass to RAM and work from it. (watch SHORT: pointer)
@@ -186,7 +186,7 @@
 - fopen() and fclose(), when working with file whether "r" or "w","a" mode, you can do only 1 mode/thing at a time, after every time you work with file, you need to close it with fclose()
 - fgetc() to read each char in the file, only work when you set "r" mode <br/>
 Code:
-<pre><code>char ch
+<pre><code>int ch
 while((ch = fgetc(ptr)) != EOF) //ptr is file pointer
     printf("%c", ch);
 </code></pre>
@@ -203,4 +203,4 @@ e.g:
 fread(arr, sizeof(int), 10, ptr => read 40 bytes of int from `ptr` and store them to `arr` array
 </code></pre>
 - `fwrite(<buffer>, <size>, <qty>, <file pointer>)` is similar to `fread()`
-- fgets() and fputs(): read or write a string
+- `fgets()` and `fputs()`: read or write a string
