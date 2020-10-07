@@ -153,13 +153,16 @@
 - malloc() in <stdlib.h> to allocate new memory when you try to copy a string (with loop)
 - When copy a string to a new string, you need <string.h> to use strlen() and + 1 to it for the loop, to add null aka "\0" character, otherwise the memory will be run out of memory because it doesnt know where to stop. therefore computer crashes, program go to unknown area of memory
 - Sometimes, the computer or mobile get slow, lagging because we open so many programs, apps, softwares, web browser tabs... it cause memory leak, or those things keep asking for new memory to run, it exhaustes the computer...
-- When using malloc(), need to free memory after use, otherwise there is memory leak: bad! use free(str2), check leak by: help50 valgrind ./cp_str1
+- When using malloc(), need to free memory after use, otherwise there is memory leak: bad! use free(str2), check leak by: help50 valgrind ./cp_str1. Shouldn't use free() more than 1
+- When using malloc(), need to check if it gives back value NULL, if NULL don't do it otherwise "seg fault"
 - The CS50 Library has been freeing memory it’s allocated in get_string, when our program finishes!
 - Swapping 2 integer is like swapping 2 cups of water, you need 1 more empty cup to temporarily keep water, likewise integer, you will need a temp variable
+- Swapping in C, you need to swap 2 original value not make the copy values and swap them. So you need a pointer to literally point to arguments, and you need to pass 2 addresses as arguments to swap()
 - Memory Layout: From top to bottom: Machine code => Globals (global vars) => Heap (empty area, malloc() can get access to) => Stack (Where our func runs)
 - If we call malloc() too many times, it goes past the heap and make heap overflow (aka: buffer overflow)
 - If too many funcs called, we will have stack overflow, because stack has too many frams of memory allocated as well (aka: buffer overflow, too, entire computer might crash)
 - scanf(): takes a format, %i, so the input is “scanned” for that format, and the address in memory where we want that input to go.
+- For "string" with scanf(), you don't have to give it a "&" in formart
 - ie: scanf("%d", &n) - go th address of n, assign format %d to n
 - Declare a pointer: <data type> *<pointer name>
 - Initialize pointer: <pointer name> = <address start with & operator>
@@ -167,4 +170,32 @@
 - https://nguyenvanhieu.vn/khoa-hoc-lap-trinh-c/
 - http://diendan.congdongcviet.com/threads/t42977::tim-hieu-ban-chat-cua-con-tro-tu-co-ban-den-nang-cao.cpp
 - Pointers (pointer variables) are special variables that are used to store addresses rather than values. (programiz.com/c-programming/c-pointers)
+- Before, without the pointers, functions get passed in value, which is a copy of variable. But with pointers, we pass actual vars, that might change the whole original func, recall the toupper() when copy 2 strings
+- When we work with data in hard disk, the data can't be manipulated directly there, need to pass to RAM and work from it. (watch SHORT: pointer)
+- A POINTER IS NOTHING MORE THAN JUST ADDRESS - DOUG LLOUD
+- Imagine working with pointer is like you give someone your notebook and ask him to update it, without making extra copy, check, update and give back to you to make update on your original notebook.
+- So once you get the address of a var, go directly there and work with it
+- NULL pointer is a pointer you don't set value immediately, better than it being set to random, garbage value by computer. Use "==" to if NULL exists. Once set pointer to NULL, the var doesn't randomly access random memory address that can do damage to your computer or other funcs
+- When deference a NULL value ( with *), you will get Segmentation fault, which is a good thing, explained above
+- int* p: meaning when you go to address of p, you will find there an integer. It's not itself an integer
+- string (in <cs50.h>) or any pointers data type (int*, char*, float*...) usualy 4 or 8 bytes size ( depends 32 or 64-bits systems, where memory is 32 or 64 bits long)
+- Recursive funcs are not always good, if there are too many recusive funcs are being called, it can cause stack overflow. A efficient solutions always have trade-off
+- Whenever you set a var name and value, it belong to memory area of STACK (statically memory allocated), and dynamic memory allocated or var doesn't have a name usually belong to pool of memory called HEAP
+- File manipulation in C, all funcs stay in stdio.h: fopen(), fclose(), fgetc(), fputc(), fread(), fwrite(), fprintf()
+- FILE is a new data type, FILE *file pointer
+- fopen() and fclose(), when working with file whether "r" or "w","a" mode, you can do only 1 mode/thing at a time, after every time you work with file, you need to close it with fclose()
+- fgetc() to read each char in the file, only work when you set "r" mode
+Code:
+`char ch
+while((ch = fgetc(ptr)) != EOF) //ptr is file pointer
+    printf("%c", ch);`
+- fputc() to write something to the file, only work when file in "w" or "a" mode, otherwise: error
+Code:
+`char ch
+while((ch = fgetc(ptr) != EOF)
+    fputc(ch, ptr2); // ch is char we get from ptr file to cp to ptr2`
+- fread(<buffer>, <size>, <qty>, <file pointer>): read <qty> unit of <size> from the file pointer, and store them in memory in a <buffer>, only work when file in "r" mode:
+e.g:  `fread(&bf, sizeof(BITMAPFILEHEADER), 1, inptr);` or `fread(image[i], sizeof(RGBTRIPLE), width, inptr);` (from `filer` PSET)
+e.g: `int arr[10]
+      fread(arr, sizeof(int), 10, ptr` => read 40 bytes of int from `ptr` and store them to `arr` array
 - 
