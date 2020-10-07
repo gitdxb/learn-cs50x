@@ -185,18 +185,22 @@
 - FILE is a new data type, FILE *file pointer
 - fopen() and fclose(), when working with file whether "r" or "w","a" mode, you can do only 1 mode/thing at a time, after every time you work with file, you need to close it with fclose()
 - fgetc() to read each char in the file, only work when you set "r" mode <br/>
-Code:<br/>
-<pre><code>
-	char ch<br/>
-	while((ch = fgetc(ptr)) != EOF) //ptr is file pointer<br/>
-    		printf("%c", ch);<br/>
-</code></pre>
-- fputc() to write something to the file, only work when file in "w" or "a" mode, otherwise: error<br/>
-Code:<br/>
-    char ch<br/>
-    while((ch = fgetc(ptr) != EOF)<br/>
-        fputc(ch, ptr2); // ch is char we get from ptr file to cp to ptr2<br/>
 
+Code:
+<pre><code>
+char ch
+while((ch = fgetc(ptr)) != EOF) //ptr is file pointer
+    printf("%c", ch);
+</code></pre>
+
+- fputc() to write something to the file, only work when file in "w" or "a" mode, otherwise: error<br/>
+
+Code:
+<pre><code>
+char ch
+while((ch = fgetc(ptr) != EOF)
+   fputc(ch, ptr2); // ch is char we get from ptr file to cp to ptr2
+</code></pre>
 - fread(<buffer>, <size>, <qty>, <file pointer>): read <qty> unit of <size> from the file pointer, and store them in memory in a <buffer>, only work when file in "r" mode:
 e.g:  `fread(&bf, sizeof(BITMAPFILEHEADER), 1, inptr);` or `fread(image[i], sizeof(RGBTRIPLE), width, inptr);` (from `filer` PSET)
 e.g: `int arr[10]
