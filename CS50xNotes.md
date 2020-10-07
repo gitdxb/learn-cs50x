@@ -198,11 +198,12 @@ char ch
 while((ch = fgetc(ptr) != EOF)
    fputc(ch, ptr2); // ch is char we get from ptr file to cp to ptr2
 </code></pre>
-- fread(<buffer>, <size>, <qty>, <file pointer>): read <qty> unit of <size> from the file pointer, and store them in memory in a <buffer>, only work when file in "r" mode:
+- `fread(<buffer>, <size>, <qty>, <file pointer>)`: read <qty> unit of <size> from the file pointer, and store them in memory in a <buffer>, only work when file in "r" mode:
 e.g:  `fread(&bf, sizeof(BITMAPFILEHEADER), 1, inptr);` or `fread(image[i], sizeof(RGBTRIPLE), width, inptr);` (from `filer` PSET)<br/>
 e.g: 
 <pre><code>
-`int arr[10]
-fread(arr, sizeof(int), 10, ptr` => read 40 bytes of int from `ptr` and store them to `arr` array
+int arr[10]
+fread(arr, sizeof(int), 10, ptr => read 40 bytes of int from `ptr` and store them to `arr` array
 </code></pre>
-- 
+- `fwrite(<buffer>, <size>, <qty>, <file pointer>)` is similar to `fread()`
+- fgets() and fputs(): read or write a string
