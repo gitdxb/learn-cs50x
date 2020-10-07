@@ -186,8 +186,7 @@
 - fopen() and fclose(), when working with file whether "r" or "w","a" mode, you can do only 1 mode/thing at a time, after every time you work with file, you need to close it with fclose()
 - fgetc() to read each char in the file, only work when you set "r" mode <br/>
 Code:
-<pre><code>
-char ch
+<pre><code>char ch
 while((ch = fgetc(ptr)) != EOF) //ptr is file pointer
     printf("%c", ch);
 </code></pre>
