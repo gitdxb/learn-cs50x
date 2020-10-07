@@ -191,9 +191,13 @@ while((ch = fgetc(ptr)) != EOF) //ptr is file pointer<br/>
     printf("%c", ch);`<br/>
 - fputc() to write something to the file, only work when file in "w" or "a" mode, otherwise: error<br/>
 Code:<br/>
+
 `char ch
+
 while((ch = fgetc(ptr) != EOF)
+
     fputc(ch, ptr2); // ch is char we get from ptr file to cp to ptr2`<br/>
+
 - fread(<buffer>, <size>, <qty>, <file pointer>): read <qty> unit of <size> from the file pointer, and store them in memory in a <buffer>, only work when file in "r" mode:
 e.g:  `fread(&bf, sizeof(BITMAPFILEHEADER), 1, inptr);` or `fread(image[i], sizeof(RGBTRIPLE), width, inptr);` (from `filer` PSET)
 e.g: `int arr[10]
