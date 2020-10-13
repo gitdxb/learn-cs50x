@@ -13,7 +13,7 @@
 |       1       |  19/09/2020  |       26/09/2020      |
 |       2       |  26/09/2020  |       29/09/2020      |
 |       3       |  29/09/2020  |       04/10/2020      |
-|       4       |  05/10/2020  |                       |
+|       4       |  05/10/2020  |       13/10/2020      |
 |       5       |              |                       |
 |       6       |              |                       |
 |       7       |              |                       |
@@ -204,3 +204,5 @@ fread(arr, sizeof(int), 10, ptr => read 40 bytes of int from `ptr` and store the
 </code></pre>
 - `fwrite(<buffer>, <size>, <qty>, <file pointer>)` is similar to `fread()`
 - `fgets()` and `fputs()`: read or write a string
+- PSET submission date: filter - 10/10, recover - 13/10
+## Week 5 - Data Structures: 14/10/2020
