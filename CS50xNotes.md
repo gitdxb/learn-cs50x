@@ -14,7 +14,7 @@
 |       2       |  26/09/2020  |       29/09/2020      |
 |       3       |  29/09/2020  |       04/10/2020      |
 |       4       |  05/10/2020  |       13/10/2020      |
-|       5       |              |                       |
+|       5       |  14/10/2020  |                       |
 |       6       |              |                       |
 |       7       |              |                       |
 | 	8       |              |                       |
@@ -206,3 +206,7 @@ fread(arr, sizeof(int), 10, ptr => read 40 bytes of int from `ptr` and store the
 - `fgets()` and `fputs()`: read or write a string
 - PSET submission date: filter - 10/10, recover - 13/10
 ## Week 5 - Data Structures: 14/10/2020
+- When using `malloc()` to allocate memory, need to double check with a `if` statement, i.e; if `(array == NULL) return 1;`. Immediately
+- Before: `int list[4]; list[0]=, list[1]=...`, now: `int *list = malloc(3 *sizeof(int)); list[0]=; list[1]=...`
+- `realloc()` to resize the array (add more array items), eg: `int *tmp = realloc(original_array, 4 * sizeof(int));`, then we can assign extra value to original array and save temporary pointer to that array
+- 
