@@ -209,4 +209,34 @@ fread(arr, sizeof(int), 10, ptr => read 40 bytes of int from `ptr` and store the
 - When using `malloc()` to allocate memory, need to double check with a `if` statement, i.e; if `(array == NULL) return 1;`. Immediately
 - Before: `int list[4]; list[0]=, list[1]=...`, now: `int *list = malloc(3 *sizeof(int)); list[0]=; list[1]=...`
 - `realloc()` to resize the array (add more array items), eg: `int *tmp = realloc(original_array, 4 * sizeof(int));`, then we can assign extra value to original array and save temporary pointer to that array
-- 
+- Using `malloc()` to make an array is interchangable with the old style array, but more dynamic
+- Good thing about array is you can access them instantly, unlike the `malloc` or `realloc` way. And the items are stored back-to-back-to-back...
+- Linked list: each item in the list get double memory slot for more flexibility (1 store value, 1 store address), address of this value point (pointer, or tail) to the next value (head), last item can't point anywhere so it ends with a `NULL` address (0x0)
+- Google: node, linked list, hash table, binary search tree, tries, queues, stacks
+<pre><code>
+typedef struct node
+{
+   int number;
+   struct node *next;
+}
+node;
+</pre></code>
+- Usually you can't just put `node *next` data type in the same `node;` inside because you haven't declared it before. So the work around here is to add `node` on the top and next to `typedef struct`
+- You can initialize the `list` node without any value by assigning `node *list = NULL`
+- Syntactically the same: `(*n).number = 2` and `n->number = 2`
+<pre><code>
+node *tmp = list;  // Copy of list node
+while (tmp->next != NULL) // if the end of tmp not point to NULL
+{
+   tmp = tmp->next; // Update the tmp, point to the next value avaiable
+}
+tmp->next = n;  // However how big the list is, it will keep pointing to next element
+</pre></code>
+- To update a node:
+<pre><code>
+n->next = list;
+list = n;
+</pre></code>
+- The reason for a temporarily variable is to loop through each item and check then sort items, and insert them
+- When we keep malloc-ing, insert, pointing..., unlike array, the price we pay here is : random access, it now takes several steps to access elements, we can't do binary search, Big O now is = O(n)
+- Hash table: combination of array and linked list inside of it
