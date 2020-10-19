@@ -233,7 +233,7 @@ while (tmp->next != NULL) // if the end of tmp not point to NULL
 tmp->next = n;  // However how big the list is, it will keep pointing to next element
 </pre></code>
 - To update a node:
-<pre><code>
+<br/><pre><code>
 n->next = list;
 list = n;
 </pre></code>
@@ -244,5 +244,13 @@ list = n;
 - Array: Insertion and deletion are bad, lookup is great, quite easy to sort, stuck with fixed size, no flexibility...
 - When looking for something in a linked list, we always need to keep track of the first element, and can't move it around, that's why we need to duplicate that element
 - To insert an element to a linked list, should be and always easier to insert at the first position of the linked list, because it's faster than insert at the end of the list and we need to `malloc` memory for that element
-- 
-- 
+- A trie is something like a tree but in a up-side-down position, where the root is on top, you set it only once and never touch it again, and just keep mallocing, branching out <br/>
+ <pre><code>
+typedef struct _trie
+{
+   char university[20];     // Name of universities
+   struct _trie* paths[10];    // Store array of pointers ( 0 to 9) to other nodes of the same
+}
+tries;
+</pre></code>
+- Creating data structure to store university and year founded. The `_trie* paths[10]`: every node (10) has to contain pointer to 10 other nodes. Key: year founded, Value: Uni name
