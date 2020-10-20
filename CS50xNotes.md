@@ -254,3 +254,6 @@ typedef struct _trie
 tries;
 </pre></code>
 - Creating data structure to store university and year founded. The `_trie* paths[10]`: every node (10) has to contain pointer to 10 other nodes. Key: year founded, Value: Uni name
+- Malloc always return an address, so when use `malloc()`, we initialized a pointer variable (with `*`)
+- Linked list: search - big O(n), insert: O(1)
+- 
