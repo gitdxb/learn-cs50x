@@ -256,4 +256,7 @@ tries;
 - Creating data structure to store university and year founded. The `_trie* paths[10]`: every node (10) has to contain pointer to 10 other nodes. Key: year founded, Value: Uni name
 - Malloc always return an address, so when use `malloc()`, we initialized a pointer variable (with `*`)
 - Linked list: search - big O(n), insert: O(1)
-- 
+- Hash table is all about storing information, optimization to search for something faster later, it break a problem into smaller ones.
+- When the input got hashed into in advance, when it got divided, we should get the output much faster than a pile of a big problem
+- To lookup for something in a trie, it takes a constant time to find, i.e: `Hagrid` in a whatever the number of people in a phonebook, it always take a constant time to find him. Lookup, insertion, deletion is O(1), because it doesn't depends on n elements. But we pay the price of memory (lots of them)
+
