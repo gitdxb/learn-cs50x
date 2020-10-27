@@ -14,8 +14,8 @@
 |       2       |  26/09/2020  |       29/09/2020      |
 |       3       |  29/09/2020  |       04/10/2020      |
 |       4       |  05/10/2020  |       13/10/2020      |
-|       5       |  14/10/2020  |                       |
-|       6       |              |                       |
+|       5       |  14/10/2020  |       26/10/2020      |
+|       6       |  27/10/2020  |                       |
 |       7       |              |                       |
 | 	8       |              |                       |
 | FINAL PROJECT |              |                       |
@@ -259,4 +259,19 @@ tries;
 - Hash table is all about storing information, optimization to search for something faster later, it break a problem into smaller ones.
 - When the input got hashed into in advance, when it got divided, we should get the output much faster than a pile of a big problem
 - To lookup for something in a trie, it takes a constant time to find, i.e: `Hagrid` in a whatever the number of people in a phonebook, it always take a constant time to find him. Lookup, insertion, deletion is O(1), because it doesn't depends on n elements. But we pay the price of memory (lots of them)
+## Week 6 - Python: 27/10/2020
+- Python data types: bool, float, int, str, range, list, tuple, dict, set
+- Official docs: https://docs.python.org/
+- Compare to C, Python is written in few lines of code but less efficiency than C (trade-off)
+- `if s == 'Y' or s == 'y'` is equal to `if s in ['Y','y']` or `if s.lower() in ['y']`
+- Funcs, vars don't have to declare return data type
+- `end=""` to specify that nothing should be printed at the end of our string.
+- No integer overflow as the program can run until memory is full
+- Command-line argument lib: `from sys import argv, exit`
+- We can use `exit(number)` like `return 1, 0...` like in C to tell you if program executed. eg: `exit(1)` or `sys.exit(0)`
+- We can compare directly with string with `==` operator, unlike C, we need a library and compare if 2 pointers point to the same address
+- The same with copy string or swap 2 ints
+- You can work with file from `csv` lib
+- Python has reg expression that C doesn't have
+
 
