@@ -273,5 +273,8 @@ tries;
 - The same with copy string or swap 2 ints
 - You can work with file from `csv` lib
 - Python has reg expression that C doesn't have
-
-
+- You don't have to think/manage memory because Python does that all for you. (high level language)
+- C explicitly tell computer what to do so it's faster than python. Python is instead a general purpouse langugage
+- Python need a interpreter to translate our source code to the code that CPU can understand, and our python program runs on top of other Python program (translator), that's why we pay for a price (run slower than C). 
+- Python doesnt have `main()` like in C, so we have to explicitly declare it, and nest other funcs inside it (on top, usually)
+- At the very end, put `if __name__ == "__main__": main()`
