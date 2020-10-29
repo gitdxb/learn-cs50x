@@ -278,3 +278,4 @@ tries;
 - Python need a interpreter to translate our source code to the code that CPU can understand, and our python program runs on top of other Python program (translator), that's why we pay for a price (run slower than C). 
 - Python doesnt have `main()` like in C, so we have to explicitly declare it, and nest other funcs inside it (on top, usually)
 - At the very end, put `if __name__ == "__main__": main()`
+- PSET submission date: mario - 29/10, cash - 29/10, readability - 29/10, DNA - 
