@@ -15,8 +15,8 @@
 |       3       |  29/09/2020  |       04/10/2020      |
 |       4       |  05/10/2020  |       13/10/2020      |
 |       5       |  14/10/2020  |       26/10/2020      |
-|       6       |  27/10/2020  |                       |
-|       7       |              |                       |
+|       6       |  27/10/2020  |       31/10/2020      |
+|       7       |  31/10/2020  |                       |
 | 	8       |              |                       |
 | FINAL PROJECT |              |                       |
 
@@ -278,4 +278,5 @@ tries;
 - Python need a interpreter to translate our source code to the code that CPU can understand, and our python program runs on top of other Python program (translator), that's why we pay for a price (run slower than C). 
 - Python doesnt have `main()` like in C, so we have to explicitly declare it, and nest other funcs inside it (on top, usually)
 - At the very end, put `if __name__ == "__main__": main()`
-- PSET submission date: mario - 29/10, cash - 29/10, readability - 29/10, DNA - 
+- PSET submission date: mario - 29/10, cash - 29/10, readability - 29/10, DNA - 31/10/2020
+## Week 7 - SQL: 31/10/2020
