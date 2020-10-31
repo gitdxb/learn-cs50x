@@ -280,3 +280,18 @@ tries;
 - At the very end, put `if __name__ == "__main__": main()`
 - PSET submission date: mario - 29/10, cash - 29/10, readability - 29/10, DNA - 31/10/2020
 ## Week 7 - SQL: 31/10/2020
+- `import csv` to work with csv file. First, create empty `dict()`, load csv in to that dict, count and run a loop.
+- In SQL, `SELECT title FROM favorites ORDER BY title;` to sort and display titles alphabetically
+- `SELECT title, COUNT(title) AS n FROM favorites GROUP BY title ORDER BY n DESC LIMIT 10;`: to count the title and display top 10 most voted
+- `.mode csv` to work with csv file in SQL
+- `.import "file name" file_name_in_SQL` to import CSV file
+- `.schema`: to see the table format
+- 4 most popular operations to work with SQL:
+   1. `CREATE`
+   2. `READ`
+   3. `UPDATE`
+   4. `DELETE`
+- SQL also has its own data types: BLOB, INTEGER, NUMERIC, REAL, TEXT
+- Calculations: AVG, COUNT, DISTINCT, MAX, MIN...
+- Other operations: WHERE, LIKE, LIMIT, GROUP BY, ORDER BY, JOIN
+- DROP: delete an entire table altogether
