@@ -287,7 +287,7 @@ tries;
 - `.import "file name" file_name_in_SQL` to import CSV file
 - `.schema`: to see the table format
 - 4 most popular operations to work with SQL:
-   1. `CREATE`
+   1. `CREATE, INSERT`
    2. `READ`
    3. `UPDATE`
    4. `DELETE`
@@ -295,3 +295,4 @@ tries;
 - Calculations: AVG, COUNT, DISTINCT, MAX, MIN...
 - Other operations: WHERE, LIKE, LIMIT, GROUP BY, ORDER BY, JOIN
 - DROP: delete an entire table altogether
+- `SELECT title FROM shows WHERE title = "The Office": it literally look for the exact title name. If we write `...WHERE title LIKE "%Office%"`: it means it return more variation of title, the `%` sign mean there is 0 or more character next to title
