@@ -292,7 +292,17 @@ tries;
    3. `UPDATE`
    4. `DELETE`
 - SQL also has its own data types: BLOB, INTEGER, NUMERIC, REAL, TEXT
-- Calculations: AVG, COUNT, DISTINCT, MAX, MIN...
+- Calculations: AVG, COUNT, DISTINCT (get unique value), MAX, MIN...
+- `SELECT DISTINCT(UPPER(title)....`: get unique and uppercase titles
 - Other operations: WHERE, LIKE, LIMIT, GROUP BY, ORDER BY, JOIN
 - DROP: delete an entire table altogether
 - `SELECT title FROM shows WHERE title = "The Office": it literally look for the exact title name. If we write `...WHERE title LIKE "%Office%"`: it means it return more variation of title, the `%` sign mean there is 0 or more character next to title
+- When start working with SQLite, command: `sqlite3 file_name.db`, then `.mode csv`...
+- To check SQlite structure: `.schema`
+- `SELECT UPPER(TRIM(title)), COUNT(title) FROM shows GROUP BY UPPER(TRIM(title)) ORDER BY COUNT(title) DESC LIMIT 10;`: show biggest 10 title count in descending order
+- `TRIM` function to remove any white space
+- `.save file_name.db` to save the file after done
+- Insert something more in the table: `INSERT INTO shows (Timestamp, title, genres) VALUES("now", "The Muppet show", "Comedy, Musical");` 
+- To update: `UPDATE shows SET genres = "Comedy, Drama, Musical" WHERE title = "The Mupper show";`
+- To delete: `DELETE FROM shows WHERE title LIKE "Friends";`
+- 
