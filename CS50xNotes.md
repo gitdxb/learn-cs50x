@@ -308,4 +308,13 @@ tries;
 - SQL func can be nested
 - There can be one-to-many relationship or many-to-many-relationship table
 - `CREATE INDEX...` use `B-tree` algorthm to make us work faster with db. It's like a binary tree, but much shorter root, it's wide instead
-- Be careful of: SQL injection, someone else can manipulate your database
+- Be careful of: SQL injection attack, someone else can manipulate your database by injecting some SQL commands to login form, contact...to change or delete database
+- The "race condition" also another problem that can cause server record double/ duplicate user input at the same time. That's why you need to use something call `TRANSACTION` and `COMMIT`
+- Solution for that can be:
+<pre><code>
+db.execute("BEGIN TRANSACTION")
+rows = db.execute("SELECT likes FROM posts WHERE id = ?", id);
+likes = rows[0]["likes"]
+db.execute("UPDATE posts SET likes = ? WHERE id = ?", likes + 1, id);
+db.execute("COMMIT")
+</pre></code>

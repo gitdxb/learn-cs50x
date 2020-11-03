@@ -2,13 +2,13 @@ import csv
 
 # Open TSV file
 # https://datasets.imdbws.com/title.basics.tsv.gz
-with open("data.tsv", "r") as titles:
+with open("data.tsv", "r", encoding="utf-8") as titles:
 
     # Create DictReader
     reader = csv.DictReader(titles, delimiter="\t")
 
     # Open CSV file
-    with open("shows1.csv", "w") as shows:
+    with open("shows1.csv", "w", encoding="utf-8") as shows:
 
         # Create writer
         writer = csv.writer(shows)

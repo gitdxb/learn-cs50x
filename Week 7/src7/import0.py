@@ -2,7 +2,7 @@ import csv
 
 # Open TSV file
 # https://datasets.imdbws.com/title.basics.tsv.gz
-with open("title.basics.tsv", "r") as titles:
+with open("title.basics.tsv", "r", encoding="utf-8") as titles:
 
     # Create DictReader
     reader = csv.DictReader(titles, delimiter="\t")
