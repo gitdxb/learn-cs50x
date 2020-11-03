@@ -305,4 +305,7 @@ tries;
 - Insert something more in the table: `INSERT INTO shows (Timestamp, title, genres) VALUES("now", "The Muppet show", "Comedy, Musical");` 
 - To update: `UPDATE shows SET genres = "Comedy, Drama, Musical" WHERE title = "The Mupper show";`
 - To delete: `DELETE FROM shows WHERE title LIKE "Friends";`
-- 
+- SQL func can be nested
+- There can be one-to-many relationship or many-to-many-relationship table
+- `CREATE INDEX...` use `B-tree` algorthm to make us work faster with db. It's like a binary tree, but much shorter root, it's wide instead
+- Be careful of: SQL injection, someone else can manipulate your database
