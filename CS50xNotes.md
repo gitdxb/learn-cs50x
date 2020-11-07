@@ -16,8 +16,8 @@
 |       4       |  05/10/2020  |       13/10/2020      |
 |       5       |  14/10/2020  |       26/10/2020      |
 |       6       |  27/10/2020  |       31/10/2020      |
-|       7       |  31/10/2020  |                       |
-| 	8       |              |                       |
+|       7       |  31/10/2020  |       07/11/2020      |
+| 	8       |  07/11/2020  |                       |
 | FINAL PROJECT |              |                       |
 
 ## Week 0: 18/09/2020
@@ -318,3 +318,6 @@ likes = rows[0]["likes"]
 db.execute("UPDATE posts SET likes = ? WHERE id = ?", likes + 1, id);
 db.execute("COMMIT")
 </pre></code>
+- PSET submission date: 7/11- Movies, 7/11- Houses
+## Week 8 - Information: 7/11/2020
+- 
