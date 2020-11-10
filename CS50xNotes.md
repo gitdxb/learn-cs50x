@@ -322,3 +322,4 @@ db.execute("COMMIT")
 ## Week 8 - Information: 7/11/2020
 - LET'S GOOOO!
 - Terms: Internet, TCP/IP, IP, DNS, TCP, HTTP/HTTPS, DNS, TLD,...
+- PSET submission date: 10/11 - Homepage, xx/11 - Finance
