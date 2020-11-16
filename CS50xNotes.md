@@ -323,3 +323,39 @@ db.execute("COMMIT")
 - LET'S GOOOO!
 - Terms: Internet, TCP/IP, IP, DNS, TCP, HTTP/HTTPS, DNS, TLD,...
 - PSET submission date: 10/11 - Homepage, xx/11 - Finance
+## FLASK
+- Lecture: https://youtu.be/EaOhKg5pKV8
+- Simpliest flask app has this 4 files: application.py, requirements.txt, static/, templates/
+- Flask use MVC design model: M (model), V (view), C (controller)
+- Controller: where most of python codes live
+- View: what human see/view: html file
+- Model: what technique, software you use for data (ie: SQL, CSV...)
+- To run a flask app, type: `flask run`
+- `render_template` is like `open()` in python, it run the webpage file, it can take 2 arguments
+- `request`: grab the user input, analyze it and return a clean input for us
+- `app = Flask(__name__)` to activate the flask framework
+- The `@app.route("/")` by default using `get` method. To use `post` method, we have to change it to `@app.route("/", methods=["POST"])` and change `request.args` to `request.form`
+- To avoid repeatativeness of HTML files (make the folder bloated), we create a general `layout.html` file
+- `layout.html`: we plug: `{% block body %}{% endblock %}` like a placeholder, then go to other html file and get rid of most of html structure
+- If a dynamic web use so many routes will be annoying, so we can combine like `@app.route("/", methods=["GET", "POST])`
+- Before:
+<pre><code>
+@app.route("/")
+def index():
+    return render_template("index.html")
+
+@app.route("/greet", methods=["POST"])
+def greet():
+    return render_template("greet.html", name=request.form.get("name", "world"))
+</pre></code>
+- After:
+<pre><code>
+@app.route("/", methods=["GET", "POST"])
+def index():
+    if request.method == "GET":
+        return render_template("index.html")
+    if request.method == "POST":
+        return render_template("greet.html", name=request.form.get("name", "world"))
+</pre></code>
+- So if it's a get request will display the form, if its a post request, it will display "hello, name". We have to change the URL in the form from `/greet` to just `/`
+- And whenever we enter a URL, it send get request
